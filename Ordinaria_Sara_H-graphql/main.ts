@@ -23,14 +23,14 @@ try{
 }catch(error){
   console.log(error.message);
 }*/
-
+/*  resolvers:{
+    Query,
+    Mutation
+  } */
   
 const server = new ApolloServer ({
   typeDefs,
-  resolvers:{
-    Query,
-    Mutation
-  }
+
 });
 const {url} = await startStandaloneServer(server);
 console.log(`🚀 server ready at ${url}`)

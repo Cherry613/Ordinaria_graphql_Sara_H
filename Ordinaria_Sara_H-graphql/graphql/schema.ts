@@ -4,10 +4,13 @@ export const typeDefs = `#graphql
     }
 
     type Query {
-        getEjemplo: []
+        getEjemplo(): void
     }
 
+
+`
+/*
     type Mutation {
         addEjemplo(ejemplo: String!): String!
     }
-`
+*/
