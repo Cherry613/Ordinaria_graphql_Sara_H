@@ -1,5 +1,8 @@
 {
   "tasks": {
     "dev": "deno run --allow-all --watch main.ts"
+  },
+  "imports": {
+    "graphql": "npm:graphql@^16.8.1"
   }
 }

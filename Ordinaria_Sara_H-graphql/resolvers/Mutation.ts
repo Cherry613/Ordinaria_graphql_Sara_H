@@ -2,7 +2,8 @@ import mongoose from "npm:mongoose@8.0.0";
 import { contactoModel } from "../db/Contacto.ts";
 import { Contacto } from "../types.ts";
 import { dataTelefono } from "./dataTelefono.ts";
-import { GraphQLError } from "../../../../AppData/Local/deno/npm/registry.npmjs.org/graphql/16.8.1/index.js";
+import { GraphQLError } from "graphql";
+
 
 export const Mutation = {
 
