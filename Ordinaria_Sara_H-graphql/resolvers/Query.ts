@@ -33,7 +33,7 @@ export const Query = {
         try{
             const contactos = await contactoModel.find().exec();    //array de contactos
             //recorrer todos los contactos del array y para cada uno coger su pais y su hora con las apis 
-            const datos_contactos = Promise.all(contactos.map(async (contacto) => {
+            /*const datos_contactos = Promise.all(contactos.map(async (contacto) => {
                 const data_tlf = await dataTelefono(contacto.num_tlf);
                 const capital = await getCapital(data_tlf.country);
                 const hora = await worldTime(capital[0].capital);
@@ -41,7 +41,7 @@ export const Query = {
                 return {
                     hora: hora
                 }
-            }))
+            }))*/
             
 
 
