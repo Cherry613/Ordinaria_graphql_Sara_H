@@ -4,7 +4,7 @@ export const typeDefs = `#graphql
     }
 
     type Query {
-        getEjemplo: void
+        getEjemplo: String!
     }
 
 

@@ -1,9 +1,10 @@
 import mongoose from "npm:mongoose@8.0.0";
 
 export const Query = {
-    getEjemplo: ():void => {
+    getEjemplo: ():String => {
         try{
             
+            return "";
         }catch(error){
             return error.message;
         }
