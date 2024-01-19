@@ -1,16 +1,21 @@
 export const typeDefs = `#graphql
-    type Ejemplo {
-        id: ID!,
+    type Contacto {
+        id: ID!
+        nombre_completo: String!
+        num_tlf: String!
+        pais: String!
     }
 
     type Query {
-        getEjemplo: String!
+        getContact(id: ID!): Contacto!
+        getContacts: [Contacto]!
+    }
+
+    type Mutation {
+        addContact(nombre_completo: String!, num_tlf: String!): Contacto!
+        deleteContact(id: ID!): Boolean!
+        updateContact(id: ID!, nombre_completo: String, num_tlf: String): Contacto!
     }
 
 
 `
-/*
-    type Mutation {
-        addEjemplo(ejemplo: String!): String!
-    }
-*/
